@@ -16,7 +16,6 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "react-native-safe-area-context": "^4.4.1",
     "@react-native-async-storage/async-storage": "~1.17.3",
     "@react-native-community/datetimepicker": "6.5.2",
     "@react-native-community/slider": "4.2.4",
@@ -25,6 +24,8 @@
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-native": "0.70.5",
+    "react-native-paper": "^5.2.0",
+    "react-native-safe-area-context": "^4.5.0",
     "react-native-web": "^0.18.10"
   },
   "devDependencies": {
@@ -40,10 +41,10 @@
     "@storybook/addon-react-native-web": "^0.0.19",
     "@storybook/react": "^6.5.16",
     "@storybook/react-native": "6.0.1-beta.12",
-    "babel-plugin-react-docgen-typescript": "^1.5.1",
     "@types/react": "~18.0.24",
     "@types/react-native": "~0.70.6",
     "babel-loader": "^8.2.3",
+    "babel-plugin-react-docgen-typescript": "^1.5.1",
     "babel-plugin-react-native-web": "^0.18.10",
     "typescript": "^4.6.3"
   },
