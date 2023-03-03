@@ -1,4 +1,6 @@
 import React from "react"
+import { StyleSheet } from "react-native"
+import { MD3Colors } from "react-native-paper"
 import { NativePaperButton } from "./NativePaperButton"
 
 const NativePaperButtonMeta = {
@@ -6,51 +8,45 @@ const NativePaperButtonMeta = {
   component: NativePaperButton,
   argTypes: {
    /*Mode of the button. You can change the mode to adjust the styling to give it desired emphasis. */
-    mode:{
+    variant:{
       control:{
         type:'select',
         options:['contained','outlined','text','contained-tonal','elevated']
       },
     },
-    /*Whether the color is a dark color. A dark button will render light text and vice-versa. 
-    Only applicable for:contained, contained-tonal and elevated. */
-    dark: {
-      options: [true, false],
-      control: { type: 'radio' },
-    },
-    /*Use a compact look, useful for text buttons in a row. */
-    compact: {
-      options: [true, false],
-      control: { type: 'radio' },
-    },
-    loading: {
-      options: [true, false],
-      control: { type: 'radio' },
-    },
-    disabled: {
-      options: [true, false],
-      control: { type: 'radio' },
-    },
-    uppercase: {
-      options: [true, false],
-      control: { type: 'radio' },
-    },
+    // buttonColor:{
+    //   control:{
+    //     type:'select',
+    //     options:[MD3Colors.primary0,MD3Colors.secondary0,MD3Colors.error0]
+    //   },
+    // },
     onPress: { action: "pressed the button" },
-    onLongPress:{},
+
   },
   args: {
-    buttonColor:"blue",
-    textColor:"white",
+    variant:"contained",
+    dark:true,
     icon:"camera",
-    children:"Hello world",
-    accessibilityLabel:"button",
-    accessibilityHint:"button",
-    delayLongPress:4000,
-    // contentStyle:,
-    // style:,
-    // labelStyle:,
+    contentStyle:{flexDirection: 'row-reverse'},
+    compact:true,
+    loading:false,
+    disabled:false,
+    uppercase:true,    
+     // labelStyle:,
     // theme:,
     // testID:,
+  //   children: 'HI',
+	// variant: 'contained',
+	// size: 'large',
+	// color: 'success',
+	// disabled: false,
+	// disableElevation: true,
+	// startIcon: 'Delete',
+	// fullWidth: false,
+	// href: 'https://mui.com/material-ui/react-button/',
+	// disableFocusRipple: true,
+	// disableRipple: false,
+	// sx: { border: '10px solid black' },
   }
 }
 
