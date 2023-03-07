@@ -1,6 +1,4 @@
 import React from "react"
-import { StyleSheet } from "react-native"
-import { MD3Colors } from "react-native-paper"
 import { NativePaperButton } from "./NativePaperButton"
 
 const NativePaperButtonMeta = {
@@ -14,12 +12,12 @@ const NativePaperButtonMeta = {
         options:['contained','outlined','text','contained-tonal','elevated']
       },
     },
-    // buttonColor:{
-    //   control:{
-    //     type:'select',
-    //     options:[MD3Colors.primary0,MD3Colors.secondary0,MD3Colors.error0]
-    //   },
-    // },
+    color:{
+      control:{
+        type:'select',
+        options:['primary','secondary','tertiary','neutral','error','none']
+      },
+    },
     onPress: { action: "pressed the button" },
 
   },
